@@ -1,0 +1,36 @@
+
+Admin@DESKTOP-8OBPGK7 MINGW64 /d/Forked from sir/pythondjango-1 (master)
+$ git log
+commit e29a4f4537f0dfff0cb717c9a71282497a4e486b (HEAD -> master, origin/master, origin/HEAD)
+Author: drpoudel3785 <dharmarajpoudel@hotmail.com>
+Date:   Wed May 25 17:15:36 2022 +0545
+
+    split find
+
+commit fd233a02d05a6eebf071f820e948a5bde1a1766a
+Author: drpoudel3785 <dharmarajpoudel@hotmail.com>
+Date:   Tue May 24 18:16:10 2022 +0545
+
+    String methods and formatting
+
+commit dd313c248b7006ea87847c22cd116dfd54fb9fcd
+Author: drpoudel3785 <dharmarajpoudel@hotmail.com>
+Date:   Mon May 23 18:12:03 2022 +0545
+
+    overloading overriding string functions
+
+commit e2762e5ac802ddc62037fa0b00200eded07c8470
+Author: drpoudel3785 <dharmarajpoudel@hotmail.com>
+Date:   Thu May 19 18:02:35 2022 +0545
+
+
+Admin@DESKTOP-8OBPGK7 MINGW64 /d/Forked from sir/pythondjango-1 (master)
+$
+
+Admin@DESKTOP-8OBPGK7 MINGW64 /d/Forked from sir/pythondjango-1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
