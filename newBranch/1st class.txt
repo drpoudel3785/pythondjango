@@ -1,0 +1,45 @@
+python download 3.10.4
+download pycharm Communinity version
+install python with add path ticked
+pyCharm is same as visualBasic in C#
+git-scm download for windows
+install puCharm with defaults
+signup for github(its useful for later use too)
+install githunb with defaults (desktop icon plus)
+
+2nd class
+GIT clone and Git Pull
+-GC used once in project, GP used severeal tyimes in a project
+
+
+Edraw mindmap ---initial step
+wireframe is also used then coding but better is Edraw mindmap
+Need to know the theory as well, very helpful
+
+Python Membership Operator and Identity Operator
+(in and not in)  (is and is not)
+this is completely new operator in  Python which is not found in any other programming languages.
+
+Access modifiers
+Public = no underscore () public for all, can be used out of the module/class/package too
+Private = double unsderscore (__)  data security, entirely private
+public = single underscore (_) used for inheritence
+
+Inheritence:
+1. Single Inheritence
+2. Multiple Inheritence
+3. Multilevel Inheritence
+
+
+$ git remote add fork https://github.com/Marasini0/pythondjango-1
+$ git remote
+$ git push -u fork mina
+
+
+
+
+
+
+
+
+
