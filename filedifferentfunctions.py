@@ -1,4 +1,28 @@
 import os
+import shutil
+if not os.path.isdir("helpme"):
+    os.mkdir("helpme")
+path = os.chdir("D:\CLASS\Training\PYTHONDJANGO\CODES\helpme")
+print(path)
+file2 = open(r"D:\reading\help.txt", "r")
+# Python code to create a file and override
+file = open('helpme.txt','w')
+file.write("This is the write command")
+file.write("It allows us to write in a particular file")
+file.close()
+#os.remove("helpme.txt")
+#os.rmdir("admin123")
+path = os.chdir("D:\CLASS\Training\PYTHONDJANGO\CODES")
+#os.rmdir('helpme')
+shutil.rmtree('helpme')
+# getting the current directory info
+print(os.getcwd())
+# Change the current directory
+#os.chdir('D:\\CLASS')
+#print(os.getcwd())
+
+
+
 #renaming the dharma.txt to poudel.txt
 if os.path.exists('dharma.txt'):
     os.rename('dharma.txt' , 'poudel.txt')
@@ -16,7 +40,7 @@ if not isExist:
 else:
     print(path, "admin directory already exists")
 
-print(os.listdir("./admin"))
+print(os.listdir("admin"))
 for x in os.listdir("admin"):
     print(x)
 

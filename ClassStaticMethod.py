@@ -1,6 +1,6 @@
 # Python program to demonstrate
 # use of class method and static method.
-from datetime import date
+from datetimetest import date
 class Person:
     def __init__(self, name, age):
         self.name = name
