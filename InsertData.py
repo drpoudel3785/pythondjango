@@ -7,9 +7,8 @@ import sqlite3
 # create connection to database
 cnt = sqlite3.connect('sql.db')
 cursor = cnt.cursor()
-query = "INSERT INTO users VALUES(4,'admin4','admin4', 'dharmarajpoudel@gmail.com','9851163785', 'admin', 1, '2022-06-13', '2022-06-13')"
+query = "INSERT INTO users VALUES(5,'admin5','admin5', 'dharmarajpoudel@gmail.com','9851163785', 'admin', 1, '2022-06-13', '2022-06-13')"
 cursor.execute(query)
-
 cnt.commit()
 print("Records created successfully")
 
