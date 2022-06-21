@@ -103,7 +103,7 @@ def Registrationform():
 
     # User Label
     Label(reg_screen, text="Usertype * ").place(x=20, y=240)
-    # gender radiobutton
+    # usertype radiobutton
     Radiobutton(reg_screen,text="Admin",variable=usertype,value=1).place(x=90,y=240)
     Radiobutton(reg_screen, text="User", variable=usertype, value=2).place(x=150, y=242)
 
@@ -116,7 +116,6 @@ def Registrationform():
                             )
     statuschoosen.current()
     statuschoosen.place(x=90,y=282)
-
 
     #Label for displaying login status[success/failed]
     Label(reg_screen, text="",textvariable=message).place(x=95,y=304)
