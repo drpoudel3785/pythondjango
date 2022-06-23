@@ -2,6 +2,16 @@ body{
     background-color: #e1dcdc;
     margin:0px;
 }
+.bannerbg{
+    background-color: #8a7272 ;
+}
+
+.mybanner{
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height:150px;
+}
 
 #container{
     width:1728px;
