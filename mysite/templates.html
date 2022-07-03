@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- utf-8 is used for unicode support -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- to identifyt the users viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- attaching external style sheet-->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="js/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <!-- attaching cdn for datatables-->
     <link href="http://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <title>Template</title>
+    <!-- 
+      # Cascading Style Sheet
+      # Inline Css, Internal CSS Embedded CSS, External CSS
+      # Priority #
+       1. Inline Css
+       2. Internal CSS
+       3. External CSS
+      # Browser Specific CSS 
+    -->
 </head>
 <body>
     <div class="container-fluid ">
@@ -19,14 +32,14 @@
         </div>
         <div class="row">
             <div class="col-xxl-12">
-                <nav class="navbar navbar-expand-lg  bg-light">
+                <nav class="navbar navbar-expand-lg fixed-top sticky-top  navbar-dark bg-dark">
                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i> Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link a" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
@@ -118,7 +131,7 @@
         <div class="row">
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 <div class="card" style="width: 18rem;">
-                    <img src="images/car1.jpg" class="img-fluid img-thumbnail rounded-circle" alt="Car1" title="Car1" /">
+                    <img src="images/car1.jpg" class="img-fluid img-thumbnail rounded" alt="Car1" title="Car1" /">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
