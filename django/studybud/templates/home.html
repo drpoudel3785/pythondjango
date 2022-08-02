@@ -1,0 +1,282 @@
+
+      {% extends 'main.html' %}
+   {% load static %}  
+
+   {% block content %}
+    <h1>Home Template</h1>
+    <div>
+
+        {%for room in rooms %} <!-- Templages Tag -->
+        <div>
+            <h5>{{room.id}} -- {{room.name}}</h5> <!-- Templates Variables-->
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-6 col-sm-12 col-md-12">
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'images/slider1.jpg' %}" class="img-fluid img-thumbnail rounded" alt="slide 1" title="slider 1" />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'images/slider2.jpg' %}" class="img-fluid img-thumbnail rounded" alt="slide 2" title="slider 2" />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'images/slider3.jpg' %}" class="img-fluid img-thumbnail rounded" alt="slide 3" title="slider 3" />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+            <div class="col-xxl-6 col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-xxl-3 col-sm-12 col-md-5">Thumb</div>
+                    <div class="col-xxl-9 col-sm-12 col-md-7">
+                      <p><a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover</p>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-3">Thumb</div>
+                    <div class="col-xxl-9">Title <br/>Description </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-3">Thumb</div>
+                    <div class="col-xxl-9">Title <br/>Description </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/car1.jpg' %}" class="img-fluid img-thumbnail rounded" alt="Car1" title="Car1" /">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="">Go somewhere</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/car1.jpg' %}" class="img-fluid img-thumbnail rounded-circle" alt="Car1" title="Car1" /">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="">Go somewhere</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/car1.jpg' %}" class="img-fluid img-thumbnail rounded-circle" alt="Car1" title="Car1" /">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="">Go somewhere</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/car1.jpg' %}" class="img-fluid img-thumbnail rounded-circle" alt="Car1" title="Car1" /">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="">Go somewhere</a>
+                    </div>
+                  </div> 
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-xxl-6">
+              <div id="accordion">
+                <h3>Section 1</h3>
+                <div>
+                  <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                  </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                  <p>
+                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                  suscipit faucibus urna.
+                  </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                  <p>
+                  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                  </p>
+                  <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                  </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                  <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                  mauris vel est.
+                  </p>
+                  <p>
+                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos.
+                  </p>
+                </div>
+
+
+                <h3>Section 5</h3>
+                <div>
+                  <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                  mauris vel est.
+                  </p>
+                  <p>
+                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos.
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-xxl-6">
+              <div id="tabs">
+                <ul>
+                  <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                  <li><a href="#tabs-2">Proin dolor</a></li>
+                  <li><a href="#tabs-3">Aenean lacinia</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                </div>
+                <div id="tabs-3">
+                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                  <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-xxl-12">
+
+            <table id="example" class="hidetable table-responsive  display nowrap dataTable dtr-inline collapsed" style="width: 100%;" aria-describedby="example_info"><thead><tr><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 136px;" aria-label="Name: activate to sort column ascending">Name</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 185px;" aria-label="Position: activate to sort column ascending">Position</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 85px;" aria-label="Office: activate to sort column ascending">Office</th><th class="dt-body-right sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 32px;" aria-label="Age: activate to sort column descending" aria-sort="ascending">Age</th><th class="dt-body-right sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 75px;" aria-label="Start date: activate to sort column ascending">Start date</th><th class="dt-body-right sorting dtr-hidden" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 0px; display: none;" aria-label="Salary: activate to sort column ascending">Salary</th></tr></thead><tbody><tr class="odd"><td class="dtr-control" tabindex="0">Tatyana Fitzpatrick</td><td class="">Regional Director</td><td class="">London</td><td class="dt-body-right sorting_1">19</td><td class="dt-body-right">3/17/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$385,750</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Shou Itou</td><td class="">Regional Marketing</td><td class="">Tokyo</td><td class="dt-body-right sorting_1">20</td><td class="dt-body-right">8/14/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$163,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Lael Greer</td><td class="">Systems Administrator</td><td class="">London</td><td class="dt-body-right sorting_1">21</td><td class="dt-body-right">2/27/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$103,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Caesar Vance</td><td class="">Pre-Sales Support</td><td class="">New York</td><td class="dt-body-right sorting_1">21</td><td class="dt-body-right">12/12/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$106,450</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Cedric Kelly</td><td class="">Senior Javascript Developer</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">22</td><td class="dt-body-right">3/29/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$433,060</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Quinn Flynn</td><td class="">Support Lead</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">22</td><td class="dt-body-right">3/3/2013</td><td class="dt-body-right dtr-hidden" style="display: none;">$342,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Gavin Cortez</td><td class="">Team Leader</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">22</td><td class="dt-body-right">10/26/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$235,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Sonya Frost</td><td class="">Software Engineer</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">23</td><td class="dt-body-right">12/13/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$103,600</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Doris Wilder</td><td class="">Sales Assistant</td><td class="">Sydney</td><td class="dt-body-right sorting_1">23</td><td class="dt-body-right">9/20/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$85,600</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Prescott Bartlett</td><td class="">Technical Author</td><td class="">London</td><td class="dt-body-right sorting_1">27</td><td class="dt-body-right">5/7/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$145,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Donna Snider</td><td class="">Customer Support</td><td class="">New York</td><td class="dt-body-right sorting_1">27</td><td class="dt-body-right">1/25/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$112,000</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Brenden Wagner</td><td class="">Software Engineer</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">28</td><td class="dt-body-right">6/7/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$206,850</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Jennifer Chang</td><td class="">Regional Director</td><td class="">Singapore</td><td class="dt-body-right sorting_1">28</td><td class="dt-body-right">11/14/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$357,650</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Michael Bruce</td><td class="">Javascript Developer</td><td class="">Singapore</td><td class="dt-body-right sorting_1">29</td><td class="dt-body-right">6/27/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$183,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Jena Gaines</td><td class="">Office Manager</td><td class="">London</td><td class="dt-body-right sorting_1">30</td><td class="dt-body-right">12/19/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$90,560</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Jenette Caldwell</td><td class="">Development Lead</td><td class="">New York</td><td class="dt-body-right sorting_1">30</td><td class="dt-body-right">9/3/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$345,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Jonas Alexander</td><td class="">Developer</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">30</td><td class="dt-body-right">7/14/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$86,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Airi Satou</td><td class="">Accountant</td><td class="">Tokyo</td><td class="dt-body-right sorting_1">33</td><td class="dt-body-right">11/28/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$162,700</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Dai Rios</td><td class="">Personnel Lead</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">35</td><td class="dt-body-right">9/26/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$217,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Charde Marshall</td><td class="">Regional Director</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">36</td><td class="dt-body-right">10/16/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$470,600</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Timothy Mooney</td><td class="">Office Manager</td><td class="">London</td><td class="dt-body-right sorting_1">37</td><td class="dt-body-right">12/11/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$136,200</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Michelle House</td><td class="">Integration Specialist</td><td class="">Sydney</td><td class="dt-body-right sorting_1">37</td><td class="dt-body-right">6/2/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$95,400</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Sakura Yamamoto</td><td class="">Support Engineer</td><td class="">Tokyo</td><td class="dt-body-right sorting_1">37</td><td class="dt-body-right">8/19/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$139,575</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Bruno Nash</td><td class="">Software Engineer</td><td class="">London</td><td class="dt-body-right sorting_1">38</td><td class="dt-body-right">5/3/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$163,500</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Colleen Hurst</td><td class="">Javascript Developer</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">39</td><td class="dt-body-right">9/15/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$205,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Yuri Berry</td><td class="">Chief Marketing Officer (CMO)</td><td class="">New York</td><td class="dt-body-right sorting_1">40</td><td class="dt-body-right">6/25/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$675,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Bradley Greer</td><td class="">Software Engineer</td><td class="">London</td><td class="dt-body-right sorting_1">41</td><td class="dt-body-right">10/13/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$132,000</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Hope Fuentes</td><td class="">Secretary</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">41</td><td class="dt-body-right">2/12/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$109,850</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Gavin Joyce</td><td class="">Developer</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">42</td><td class="dt-body-right">12/22/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$92,575</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Jennifer Acosta</td><td class="">Junior Javascript Developer</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">43</td><td class="dt-body-right">2/1/2013</td><td class="dt-body-right dtr-hidden" style="display: none;">$75,650</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Haley Kennedy</td><td class="">Senior Marketing Designer</td><td class="">London</td><td class="dt-body-right sorting_1">43</td><td class="dt-body-right">12/18/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$313,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Martena Mccray</td><td class="">Post-Sales support</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">46</td><td class="dt-body-right">3/9/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$324,050</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Cara Stevens</td><td class="">Sales Assistant</td><td class="">New York</td><td class="dt-body-right sorting_1">46</td><td class="dt-body-right">12/6/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$145,600</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Angelica Ramos</td><td class="">Chief Executive Officer (CEO)</td><td class="">London</td><td class="dt-body-right sorting_1">47</td><td class="dt-body-right">10/9/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$1,200,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Hermione Butler</td><td class="">Regional Director</td><td class="">London</td><td class="dt-body-right sorting_1">47</td><td class="dt-body-right">3/21/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$356,250</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Unity Butler</td><td class="">Marketing Designer</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">47</td><td class="dt-body-right">12/9/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$85,675</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Finn Camacho</td><td class="">Support Engineer</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">47</td><td class="dt-body-right">7/7/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$87,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Fiona Green</td><td class="">Chief Operating Officer (COO)</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">48</td><td class="dt-body-right">3/11/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$850,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Shad Decker</td><td class="">Regional Director</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">51</td><td class="dt-body-right">11/13/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$183,000</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Howard Hatfield</td><td class="">Office Manager</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">51</td><td class="dt-body-right">12/16/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$164,500</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Suki Burks</td><td class="">Developer</td><td class="">London</td><td class="dt-body-right sorting_1">53</td><td class="dt-body-right">10/22/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$114,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Rhona Davidson</td><td class="">Integration Specialist</td><td class="">Tokyo</td><td class="dt-body-right sorting_1">55</td><td class="dt-body-right">10/14/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$327,900</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Zorita Serrano</td><td class="">Software Engineer</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">56</td><td class="dt-body-right">6/1/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$115,000</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Gloria Little</td><td class="">Systems Administrator</td><td class="">New York</td><td class="dt-body-right sorting_1">59</td><td class="dt-body-right">4/10/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$237,500</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Herrod Chandler</td><td class="">Sales Assistant</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">59</td><td class="dt-body-right">8/6/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$137,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Tiger Nixon</td><td class="">System Architect</td><td class="">Edinburgh</td><td class="dt-body-right sorting_1">61</td><td class="dt-body-right">4/25/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$320,800</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Thor Walton</td><td class="">Developer</td><td class="">New York</td><td class="dt-body-right sorting_1">61</td><td class="dt-body-right">8/11/2013</td><td class="dt-body-right dtr-hidden" style="display: none;">$98,540</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Brielle Williamson</td><td class="">Integration Specialist</td><td class="">New York</td><td class="dt-body-right sorting_1">61</td><td class="dt-body-right">12/2/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$372,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Vivian Harrell</td><td class="">Financial Controller</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">62</td><td class="dt-body-right">2/14/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$452,500</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Zenaida Frank</td><td class="">Software Engineer</td><td class="">New York</td><td class="dt-body-right sorting_1">63</td><td class="dt-body-right">1/4/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$125,250</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Garrett Winters</td><td class="">Accountant</td><td class="">Tokyo</td><td class="dt-body-right sorting_1">63</td><td class="dt-body-right">7/25/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$170,750</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Paul Byrd</td><td class="">Chief Financial Officer (CFO)</td><td class="">New York</td><td class="dt-body-right sorting_1">64</td><td class="dt-body-right">6/9/2010</td><td class="dt-body-right dtr-hidden" style="display: none;">$725,000</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Serge Baldwin</td><td class="">Data Coordinator</td><td class="">Singapore</td><td class="dt-body-right sorting_1">64</td><td class="dt-body-right">4/9/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$138,575</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Olivia Liang</td><td class="">Support Engineer</td><td class="">Singapore</td><td class="dt-body-right sorting_1">64</td><td class="dt-body-right">2/3/2011</td><td class="dt-body-right dtr-hidden" style="display: none;">$234,500</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Jackson Bradshaw</td><td class="">Director</td><td class="">New York</td><td class="dt-body-right sorting_1">65</td><td class="dt-body-right">9/26/2008</td><td class="dt-body-right dtr-hidden" style="display: none;">$645,750</td></tr><tr class="even"><td class="dtr-control" tabindex="0">Michael Silva</td><td class="">Marketing Designer</td><td class="">London</td><td class="dt-body-right sorting_1">66</td><td class="dt-body-right">11/27/2012</td><td class="dt-body-right dtr-hidden" style="display: none;">$198,500</td></tr><tr class="odd"><td class="dtr-control" tabindex="0">Ashton Cox</td><td class="">Junior Technical Author</td><td class="">San Francisco</td><td class="dt-body-right sorting_1">66</td><td class="dt-body-right">1/12/2009</td><td class="dt-body-right dtr-hidden" style="display: none;">$86,000</td></tr></tbody><tfoot><tr><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Position</th><th rowspan="1" colspan="1">Office</th><th class="dt-body-right" rowspan="1" colspan="1">Age</th><th class="dt-body-right" rowspan="1" colspan="1">Start date</th><th class="dt-body-right dtr-hidden" rowspan="1" colspan="1" style="display: none;">Salary</th></tr></tfoot></table>
+
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xxl-12">
+
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="auto" id="gmap_canvas" src="https://maps.google.com/maps?q=Laba%20Pvt.%20Ltd&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:auto;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:auto;width:100%;}</style></div></div>
+
+            </div>
+        </div>
+
+        <div id="dialog" title="Basic dialog">
+          <img src="images/slider2.jpg" alt="slider" title="slider"/>
+          <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+        </div>
+
+
+        </div><!-- main container-->
+        
+
+    {% endblock content%}
+
+
+
+
+    {% block sidebar %}
+
+   <h2>My Home page Side Bar</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde iusto omnis officia corporis laboriosam atque nesciunt aliquam. Dignissimos mollitia iste velit explicabo veniam suscipit incidunt illum ratione nulla nostrum.</p>
+   {% endblock sidebar%}
+
+
+   <script src="http://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+      </script>
+
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
+<script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
+    <script>
+      $( function() {
+        $( document ).tooltip();
+      } );
+      </script>
+
+      <script>
+        $(document).ready( function () {
+        $('#example').DataTable();
+        } );
+      </script>
+
+    

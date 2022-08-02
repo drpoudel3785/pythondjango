@@ -1,0 +1,33 @@
+{% extends 'main.html'  %}
+{% block content %}
+    
+<h1>Students </h1>
+<div>
+  
+
+  <p>Students and Questions record counts:</p>
+  <ul>
+    <li><strong>Students:</strong> {{ num_students }}</li>
+    <li><strong>Questions:</strong> {{ num_questions }}</li>
+  </ul>
+
+  <h2>Students Details</h2>
+  {%for alls in all_students %}
+  <div>
+      <p>{{alls.id}} -- {{alls.name}} -- {{alls.department}}</p>
+  </div>
+  {% endfor %}
+
+
+
+
+</div>
+{% endblock content %}
+
+{% block sidebar %}
+        <ul class="sidebar-nav">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="">All Students</a></li>
+          <li><a href="">All Questions</a></li>
+        </ul>
+     {% endblock %}
